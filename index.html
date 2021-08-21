@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+		<link rel="stylesheet" href="style2.css" />
+	</head>
+	<body>
+		<div id="my_box" >
+			<div class="content">
+				<div class="title_content">
+				<img id="title" src="title.png">
+		</div>
+		<div class="fixed">
+		<div class="round">0</div>
+		</div>
+		<main>
+			<div class="player-group group">
+				<button class="player-select">가위</button>
+				<button class="player-select">바위</button>
+				<button class="player-select">보</button>
+				<div class="player"><h3>플레이어</h3></div>
+			</div>
+			<div class="human_circle" style="background:#e1dfe0;">
+				<img id="hu_r" src="인간바위.png" >
+			</div>
+			<div>
+				<div class="result">winner</div>
+				<div class="wins"><h4>Wins!</h4></div>
+			</div>
+			<div class="computer-group group">
+				<button class="computer-select">가위</button>
+				<button class="computer-select">바위</button>
+				<button class="computer-select">보</button>
+				<div class="player"><h3>컴퓨터</h3><div>
+			</div>
+			<div class="computer_circle" style="background:#e1dfe0;">
+				<img id="com_r" src="바위.png">
+			  </div>
+		</main>
+		<section>
+			<h2>결과 기록</h2>
+			<ol class="result-record-view"></ol>
+		</section>
+
+		<script src="script.js"></script>
+	</body>
+</html>

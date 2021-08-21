@@ -1,0 +1,161 @@
+* {
+	box-sizing: content-box;
+	margin: 0;
+}
+
+main {
+	width: 100%;
+	height: 80vh;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+}
+
+.group {
+	padding: 1.3em;
+}
+
+section {
+	padding: 20px;
+	width: 100vw;
+	height: 20vh;
+	text-align: center;
+}
+
+h2 {
+	text-align: left;
+	margin: 15px 0;
+}
+
+ol {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: flex-start;
+}
+li {
+	margin: 0 15px;
+}
+
+button {
+	border: none;
+	background-color: oldlace;
+	font-size: 20px;
+	width: 3em;
+	height: 1.5em;
+	margin: 0 10px;
+}
+
+.player-select:hover {
+	background-color: palevioletred;
+	transition: background-color 100ms ease-in-out;
+}
+
+.select {
+	background-color: palevioletred;
+	transition: background-color 100ms ease-in-out;
+}
+
+.fixed {
+	display: flex;
+	justify-content: flex-end;
+	right: 9vw;
+	position: fixed;
+	width: 100vw;
+	top: 7vh;
+	font-size: 4rem;
+}
+
+.round::after {
+	content: ' /10';
+}
+
+.result {
+	width: 100%;
+	text-transform: uppercase;
+	font-size: 3.5rem;
+	text-align: center;
+	font-weight: bold;
+	height: 80px;
+	line-height: 120px;
+}
+
+.wins {
+	height: 40px;
+	line-height: 60px;
+	text-align: center;
+}
+
+.winner {
+	border: 1.5px solid orange;
+	z-index: 1;
+}
+
+.human_circle {
+	position: absolute;
+	z-index: 0;
+	left: 8vw;
+	top: 48vh;
+	width: 20vw;
+	height: 40vh;
+	border-radius: 70%;
+	overflow: hidden;
+	max-width: 100%;
+}
+
+#hu_r {
+	width: 110%;
+	height: 100%;
+	object-fit: cover;
+	object-position: top;
+	max-width: 100%;
+}
+
+.computer_circle {
+	position: absolute;
+	z-index: 0;
+	left: 67vw;
+	top: 48vh;
+	width: 20vw;
+	height: 40vh;
+	border-radius: 70%;
+	overflow: hidden;
+	max-width: 100%;
+}
+
+#com_r {
+	width: 97%;
+	height: 105%;
+	object-fit: scale-down;
+	max-width: 100%;
+}
+
+#my_box {
+	position: absolute;
+	z-index: -1;
+	left: 2vw;
+	top: 1vh;
+	width: 93vw;
+	height: 98vh;
+	background: #ffff;
+	border: 15px solid #f7ba00;
+}
+
+.title_content {
+	width: 50%;
+}
+#title {
+	position: absolute;
+	z-index: -1;
+	left: 33vw;
+	top: -13vh;
+	max-width: 100%;
+	height: 45vh;
+	align-items: center;
+	transform: scale(1.4);
+	background: #ffff;
+}
+
+.player {
+	text-align: center;
+	line-height: 50px;
+}
